@@ -2,6 +2,7 @@
   "name": "apex-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "htts://lilyqin7.github.io/apex",
   "type": "module",
   "scripts": {
     "dev": "vite",
