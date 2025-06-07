@@ -13,11 +13,16 @@ function Footer() {
                 </div>
                 <div className="flex flex-col space-y-[13px]">
                     <div className="text-[26px]">Join our Slack!</div>
-                    <img src={slackIcon} alt="Slack Icon" className="h-[50px] w-[50px]"/>
+                    {/* REPLACE THE SLACK LINK WHEN IT EXPIRES!!! */}
+                    <a href="https://join.slack.com/t/apexbuggy/shared_invite/zt-367fbv1ck-K53JHZifaUMcK~1ZAIPwZg" target="_blank" rel="noopener noreferrer">
+                        <img src={slackIcon} alt="Slack Icon" className="h-[50px] w-[50px]"/>
+                    </a>
                 </div>
                 <div className="flex flex-col space-y-[13px]">
                     <div className="text-[26px]">Follow us on Instagram!</div>
-                    <img src={instagramIcon} alt="Instagram Icon" className="h-[50px] w-[50px]"/>
+                    <a href="https://www.instagram.com/apexbuggy/" target="_blank" rel="noopener noreferrer">
+                        <img src={instagramIcon} alt="Instagram Icon" className="h-[50px] w-[50px]"/>
+                    </a>
                 </div>
             </div>
         </div>

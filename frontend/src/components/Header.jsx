@@ -16,7 +16,7 @@ function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
                     <Link to='/meetthebuggies'>Meet the Buggies</Link>
                     <Link to='/getinvolved'>Ways to Get Involved</Link>
                     <Link to='/events'>Upcoming Events</Link>
-                    <img src={searchIcon} alt="Search Icon" className="h-[20px] w-[20px]" />
+                    {/* <img src={searchIcon} alt="Search Icon" className="h-[20px] w-[20px]" /> */}
                 </div>
             </div>
             <h1 className="text-center">{pageTitle}</h1>

@@ -25,37 +25,37 @@ function TeamPage() {
         pageTitle="Meet the Team"
         headerHeight="553.6px"
       />
-      <div className="px-[200px] text-center text-white pb-[80px]">
-        <img src={teamImg} alt="Apex Team" className="w-[900px] pb-[50px]" />
+      <div className="xl:px-[200px] px-[50px] text-center text-white pb-[80px]">
+        <img src={teamImg} alt="Apex Team" className="w-[900px] pb-[50px] mx-auto" />
         <div className="flex flex-col gap-y-[80px] justify-center items-center">
           <h2>Executive Members</h2>
-          <div className="flex flex-row gap-x-[200px]">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={tiegan} name="Tiegan Duncan" position="Chairman" />
             <ExecCards photo={sarah} name="Sarah Tillinger" position="Assistant Chairman" />
           </div>
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={michelle} name="Michelle Bank" position="Treasurer" />
           </div>
           <h2>Ex-Mech</h2>
-          <div className="flex flex-row gap-x-[200px]">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={katrina} name="Katrina Mayen" position="Head Mechanic" />
             <ExecCards photo={sam} name="Sam Leong" position="Build Lead" />
           </div>
-          <div className="flex flex-row gap-x-[200px]">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={ray} name="Ray Kong" position="Assistant Head Mechanic" />
             <ExecCards photo={kayley} name="Kayley Sze" position="Assistant Build Lead" />
           </div>
           <h2>Push Captains</h2>
-          <div className="flex flex-row gap-x-[200px]">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={alex} name="Alex Werth" position="" />
             <ExecCards photo={liam} name="Liam Swayne" position="" />
           </div>
           <h2>Head Driver</h2>
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={emma} name="Emma Bigler" position="" />
           </div>
           <h2>Social Chairs</h2>
-          <div className="flex flex-row gap-x-[200px]">
+          <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
             <ExecCards photo={lily} name="Lily Qin" position="" />
             <ExecCards photo={meryl} name="Meryl Meyerson" position="" />
           </div>

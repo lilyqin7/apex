@@ -1,5 +1,6 @@
-function Circle({width, height, color, children}) {
+function Circle({width, height, color, children, className=""}) {
     return <div
+        className={className}
         style={{
             width: width,
             height: height,
