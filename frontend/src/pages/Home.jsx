@@ -29,7 +29,7 @@ function HomePage() {
         headerHeight={headerHeight}
       />
         <div className="flex flex-col items-center xl:relative xl:min-h-[600px] pb-[100px]">
-          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
+          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
             <Circle 
               className="w-[80vw] xl:w-[550px] xl:h-[300px]"
               color="#F0E9DD"
@@ -37,7 +37,7 @@ function HomePage() {
               Apex is CMU's newest independent buggy organization, founded in 2012 by a group of friends living in the Rez on Fifth.
             </Circle>
           </div>
-          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[550px] lg:top-[0px]">
+          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[550px] lg:top-[0px]">
             <Circle 
               className="w-[80vw] xl:w-[700px] xl:h-[500px]"
               color="#E2D8C7"
@@ -45,7 +45,7 @@ function HomePage() {
               <span className="whitespace-nowrap">We are <i>the</i></span> open-source buggy team, meaning that we don't keep any trade secrets. Our shop hours are fully open and we are always happy to share our knowledge with other teams. We build a new buggy each year, allowing us to innovate and push the boundaries with new ideas in buggy design.
             </Circle>
           </div>
-          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[50px] xl:top-[150px]">
+          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[50px] xl:top-[150px]">
             <Circle
               className="w-[80vw] xl:w-[550px] xl:h-[350px]"
               color="#C7BCA8"
