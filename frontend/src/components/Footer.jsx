@@ -5,7 +5,7 @@ import instagramIcon from '../assets/instagram-icon.png';
 function Footer() {
     return <div className="bg-[#FF0000] w-screen px-[20px] py-[20px] lg:px-[56px] lg:py-[32px] flex items-center justify-between text-white">
         <div className="flex flex-row justify-between w-full">
-            <img src={logo} alt="Apex Logo" className="h-[15vw] lg:h-[176px] lg:w-[167.2px]" />
+            <img src={logo} alt="Apex Logo" className="hidden lg:block h-[15vw] lg:h-[176px] lg:w-[167.2px]" />
             <div className="flex flex-col space-y-[30px] lg:flex-row lg:space-x-[70px]">
                 <div className="flex flex-col space-y-[13px]">
                     <div className="text-[26px]">Contact Us</div>

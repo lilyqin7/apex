@@ -1,6 +1,7 @@
 function Circle({width, height, color, children, className=""}) {
+    const defaultClasses = "text-[15px] md:text-[24px] p-[50px] md:p-[100px]";
     return <div
-        className={className}
+        className={`${defaultClasses} ${className}`}
         style={{
             width: width,
             height: height,
@@ -11,8 +12,6 @@ function Circle({width, height, color, children, className=""}) {
             justifyContent: 'center',
             textAlign: 'center',
             borderRadius: '50%',
-            fontSize: '24px',
-            padding: '100px 100px',
         }}
         >{children}</div>
 }

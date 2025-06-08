@@ -26,28 +26,28 @@ function BuggyPage() {
             Apex's theme is fire (we like to call ourselves "the most fire buggy team"). Each of our buggies' names and paint jobs has been chosen to align with this theme.
         </div>
         <div className="flex flex-col gap-y-[80px]">
-            <h2>Currently Rolling</h2>
+            <h2 className="text-center">Currently Rolling</h2>
             <div class="flex flex-col gap-y-[100px]">
-                <div className="flex flex-col gap-y-[80px] justify-center md:flex-row md:gap-x-[100px]">
+                <div className="flex flex-col gap-y-[80px] items-center md:flex-row md:gap-x-[100px]">
                     <BuggyCard image={helios} name="Helios" />
                     <BuggyCard image={scorch} name="Scorch" />
                 </div>
-                <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[100px]">
+                <div className="flex flex-col gap-y-[80px] items-center md:flex-row md:gap-x-[100px]">
                     <BuggyCard image={molotov} name="Molotov" />
                     <BuggyCard image={solaris} name="Solaris" />
                 </div>
-                <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[100px]">
+                <div className="flex flex-col gap-y-[80px] items-center md:flex-row md:gap-x-[100px]">
                     <BuggyCard image={phoenix} name="Phoenix" />
                     <BuggyCard/>
                 </div>
             </div>
-            <h2>Retired</h2>
+            <h2 className="text-center">Retired</h2>
             <div class="flex flex-col gap-y-[100px] pb-[80px]">
-                <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[100px]">
+                <div className="flex flex-col gap-y-[80px] items-center md:flex-row md:gap-x-[100px]">
                     <BuggyCard image={nova} name="Nova" />
                     <BuggyCard image={azula} name="Azula" />
                 </div>
-                <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[100px]">
+                <div className="flex flex-col gap-y-[80px] items-center md:flex-row md:gap-x-[100px]">
                     <BuggyCard image={firefly} name="Firefly" />
                     <BuggyCard image={ember} name="Ember" />
                 </div>

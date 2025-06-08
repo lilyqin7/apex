@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import topImg from '../assets/header-images/home-header-top-layer.png'
@@ -5,16 +6,30 @@ import bottomImg from '../assets/header-images/home-header-bottom-layer.png'
 import Circle from '../components/Circles.jsx'
 import photo from '../assets/home-image.png'
 
+function useResponsiveHeaderHeight() {
+  const [height, setHeight] = useState('300px');
+  useEffect(() => {
+    function handleResize() {
+      setHeight(window.innerWidth >= 768 ? '600px' : '300px');
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  return height;
+}
+
 function HomePage() {
+  const headerHeight = useResponsiveHeaderHeight();
   return <div className="overflow-x-hidden">
       <Header
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Apex"
-        headerHeight="600px"
+        headerHeight={headerHeight}
       />
         <div className="flex flex-col items-center xl:relative xl:min-h-[600px] pb-[100px]">
-          <div className="-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
+          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
             <Circle 
               className="w-[80vw] xl:w-[550px] xl:h-[300px]"
               color="#F0E9DD"
@@ -22,7 +37,7 @@ function HomePage() {
               Apex is CMU's newest independent buggy organization, founded in 2012 by a group of friends living in the Rez on Fifth.
             </Circle>
           </div>
-          <div className="-mb-15 xl:absolute xl:left-[550px] lg:top-[0px]">
+          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[550px] lg:top-[0px]">
             <Circle 
               className="w-[80vw] xl:w-[700px] xl:h-[500px]"
               color="#E2D8C7"
@@ -30,7 +45,7 @@ function HomePage() {
               <span className="whitespace-nowrap">We are <i>the</i></span> open-source buggy team, meaning that we don't keep any trade secrets. Our shop hours are fully open and we are always happy to share our knowledge with other teams. We build a new buggy each year, allowing us to innovate and push the boundaries with new ideas in buggy design.
             </Circle>
           </div>
-          <div className="-mb-15 xl:absolute xl:left-[50px] xl:top-[150px]">
+          <div className="mb-5 xl:-mb-15 xl:absolute xl:left-[50px] xl:top-[150px]">
             <Circle
               className="w-[80vw] xl:w-[550px] xl:h-[350px]"
               color="#C7BCA8"
@@ -78,7 +93,7 @@ function HomePage() {
             color="#F0E9DD"
           >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're open source</h2>
-            <div className="text-[20px]">
+            <div>
               Our shop hours are open to all (including members of other buggy teams) because we want to share our love of buggy with everyone. Whether you have extensive experience with composites or have never heard the word "epoxy" before, you're welcome in our shop! We're happy to teach you everything you need to know!
             </div>
           </Circle>
@@ -88,7 +103,7 @@ function HomePage() {
               color="#E2D8C7"
             >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're flexible</h2>
-              <div className="text-[20px]">
+              <div>
                 There is no minimum time commitment to join Apex. We respect our members' responsibilities outside of buggy, so other than a few Raceday-related events in the spring, nothing is mandatory. You can be as involved as little or as much as you want to be (so if waking up at 4 am isn't your thing, you don't have to!). We also welcome new members throughout the year, not just at the beginning of the semester.
               </div>
             </Circle>
@@ -99,7 +114,7 @@ function HomePage() {
               color="#C7BCA8"
             >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're fun</h2>
-              <div className="text-[20px]">
+              <div>
                 Above all, we're in Apex because we like it! In addition to doing all things buggy, Apex also organizes regular social events for everyone to enjoy. These include movie and game nights, Late Nights at local restaurants in Pittsburgh, group study sessions, and the occasional team party.
               </div>
             </Circle>
