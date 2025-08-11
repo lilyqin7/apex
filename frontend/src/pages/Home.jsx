@@ -87,9 +87,9 @@ function HomePage() {
           </iframe>
         </div>
         <h2 className="text-center">So...what makes Apex special?</h2>
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-col ">
           <Circle 
-            className="w-[80vw] xl:w-[1000px] xl:h-[300px]"
+            className="w-[80vw] xl:w-[1000px] xl:h-[400px]"
             color="#F0E9DD"
           >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're open source</h2>
@@ -99,7 +99,7 @@ function HomePage() {
           </Circle>
           <div style={{ marginTop: '-40px' }}>
             <Circle 
-              className="w-[80vw] xl:w-[1000px] xl:h-[330px]"
+              className="w-[80vw] xl:w-[1000px] xl:h-[430px]"
               color="#E2D8C7"
             >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're flexible</h2>
@@ -110,7 +110,7 @@ function HomePage() {
           </div>
           <div style={{ marginTop: '-40px' }}>
             <Circle
-              className="w-[80vw] xl:w-[1000px] xl:h-[270px]"
+              className="w-[80vw] xl:w-[1000px] xl:h-[370px]"
               color="#C7BCA8"
             >
             <h2 style={{fontSize: '35px', color: 'black'}}>We're fun</h2>
