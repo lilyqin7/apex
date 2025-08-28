@@ -12,7 +12,7 @@ function InvolvedPage() {
         <Header
             topLayer={topImg}
             bottomLayer={bottomImg}
-            pageTitle="Ways to Get Involved"
+            pageTitle="Get Involved"
             headerHeight="607px"
         />
         <div className="px-[71px] text-center dark:text-white pb-[80px]">

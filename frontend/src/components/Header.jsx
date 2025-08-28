@@ -27,7 +27,7 @@ function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
                 <div className="hidden lg:flex flex-row space-x-[30px] text-[18px]">
                     <Link to='/meettheteam'>Meet the Team</Link>
                     <Link to='/meetthebuggies'>Meet the Buggies</Link>
-                    <Link to='/getinvolved'>Ways to Get Involved</Link>
+                    <Link to='/getinvolved'>Get Involved</Link>
                     <Link to='/events'>Upcoming Events</Link>
                     {/* <img src={searchIcon} alt="Search Icon" className="h-[20px] w-[20px]" /> */}
                 </div>
@@ -47,7 +47,7 @@ function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
                         </Link>
                         <Link to='/meettheteam' onClick={() => setMenuOpen(false)}>Meet the Team</Link>
                         <Link to='/meetthebuggies' onClick={() => setMenuOpen(false)}>Meet the Buggies</Link>
-                        <Link to='/getinvolved' onClick={() => setMenuOpen(false)}>Ways to Get Involved</Link>
+                        <Link to='/getinvolved' onClick={() => setMenuOpen(false)}>Get Involved</Link>
                         <Link to='/events' onClick={() => setMenuOpen(false)}>Upcoming Events</Link>
                     </div> 
                 </div>
