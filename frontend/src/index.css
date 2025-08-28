@@ -30,7 +30,6 @@ h1 {
 h2 {
   font-family: var(--font-headers);
   font-size: 60px;
-  color: #ffffff;
   font-weight: bold;
 }
 
@@ -50,5 +49,11 @@ html, body {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: #ffffff;
   }
 }

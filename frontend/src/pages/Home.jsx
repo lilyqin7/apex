@@ -57,10 +57,10 @@ function HomePage() {
       <div className="flex flex-col gap-y-[50px] items-center lg:px-[150px] px-[50px] pb-[80px]">
         <img src={photo} alt="Apex Team" className="w-[80vw]" />
         <h2 className="text-center">But first... what is buggy?</h2>
-        <div className="text-[22px] text-center text-white">
+        <div className="text-[22px] text-center dark:text-white">
           Buggy is a uniquely CMU activity that mixes engineering, design, and athleticism. Students build unmotorized vehicles (buggies) which are driven through a 0.84-mile course by individuals called drivers and powered by athletes who push it in a relay race.
         </div>
-        <div className="text-[22px] text-center text-white font-bold">
+        <div className="text-[22px] text-center dark:text-white font-bold">
           Here is the course:
         </div>
         <div className="w-[80vw] aspect-video mx-auto">
@@ -73,7 +73,7 @@ function HomePage() {
             allowfullscreen>
           </iframe>
         </div>
-        <div className="text-[22px] text-center text-white font-bold">
+        <div className="text-[22px] text-center dark:text-white font-bold">
           Below is a buggy race during Carnival:
         </div>
         <div className="w-[80vw] aspect-video mx-auto">
@@ -121,7 +121,7 @@ function HomePage() {
           </div>
         </div>
         <h2 className="text-center">Sounds like your cup of tea?</h2>
-        <div className="text-white text-[22px] text-center">Join our Slack and come to one of our recruitment events!</div>
+        <div className="dark:text-white text-[22px] text-center">Join our Slack and come to one of our recruitment events!</div>
       </div>
       
       <Footer/>

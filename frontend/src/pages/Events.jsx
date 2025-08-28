@@ -21,7 +21,7 @@ function EventsPage() {
           </iframe>
         </div>
       </div>
-      <div className="px-[50px] lg:px-[200px] text-center text-white pt-[50px] pb-[80px] text-[22px]">
+      <div className="px-[50px] lg:px-[200px] text-center dark:text-white pt-[50px] pb-[80px] text-[22px]">
         We have shop hours every week on Mondays and Thursdays from 5-7pm in our shop in East Campus Garage and rolls nearly every weekend starting at 5am at our staging location!
       </div>
       <Footer/>

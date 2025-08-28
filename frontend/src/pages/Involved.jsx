@@ -15,7 +15,7 @@ function InvolvedPage() {
             pageTitle="Ways to Get Involved"
             headerHeight="607px"
         />
-        <div className="px-[71px] text-center text-white pb-[80px]">
+        <div className="px-[71px] text-center dark:text-white pb-[80px]">
             <div className="pb-[80px] text-[22px]">
                 While there are three traditional roles in buggy (mechanics, pushers, and drivers), there are many other ways for you to get involved! We’re always in need of flaggers (people who stand near the chute with a flag and an epic view) and timers, and you’re always welcome to just come to social events!
             </div>
