@@ -13,29 +13,35 @@ function HomePage() {
         bottomLayer={bottomImg}
         pageTitle="Apex"
       />
-        <div className="flex flex-col items-center xl:relative xl:min-h-[600px] pb-[100px]">
-          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
+        <div className="relative xl:min-h-[600px] xl:w-[1300px] mx-auto xl:block grid justify-center -space-y-8 -mt-36 mb-8">
+          <div className="xl:absolute xl:left-[146px] xl:-top-[20px]">
             <Circle 
-              className="w-[80vw] xl:w-[550px] xl:h-[300px]"
+              className="w-[80vw] xl:w-[510px] xl:h-[300px]"
               color="#F0E9DD"
             >
-              Apex is CMU's newest independent buggy organization, founded in 2012 by a group of friends living in the Rez on Fifth.
+              <p className="leading-tight">
+                Apex is CMU's newest independent buggy organization, founded in 2012 by a group of friends living in the Rez on Fifth.
+              </p>
             </Circle>
           </div>
-          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[550px] lg:top-[0px]">
+          <div className="xl:absolute xl:left-[550px] lg:top-[70px]">
             <Circle 
               className="w-[80vw] xl:w-[700px] xl:h-[500px]"
               color="#E2D8C7"
             >
-              <span className="whitespace-nowrap">We are <i>the</i></span> open-source buggy team, meaning that we don't keep any trade secrets. Our shop hours are fully open and we are always happy to share our knowledge with other teams. We build a new buggy each year, allowing us to innovate and push the boundaries with new ideas in buggy design.
+              <p className="leading-tight">
+                We are <i>the</i> open-source buggy team, meaning that we don't keep any trade secrets. Our shop hours are fully open and we are always happy to share our knowledge with other teams. We build a new buggy each year, allowing us to innovate and push the boundaries with new ideas in buggy design.
+              </p>
             </Circle>
           </div>
-          <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[50px] xl:top-[150px]">
+          <div className="xl:absolute xl:left-[50px] xl:top-[240px]">
             <Circle
               className="w-[80vw] xl:w-[550px] xl:h-[350px]"
               color="#C7BCA8"
             >
-              Apex remains dedicated to our founding principles of teamwork, passion, innovation, and excitement. But above all, we're just a bunch of friends who all love buggy!
+              <p className="leading-tight">
+                Apex remains dedicated to our founding principles of teamwork, passion, innovation, and excitement. But above all, we're just a bunch of friends who all love buggy!
+              </p>
             </Circle>
           </div>
         </div>

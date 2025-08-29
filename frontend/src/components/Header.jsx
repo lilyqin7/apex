@@ -50,7 +50,7 @@ function Header({topLayer, bottomLayer, pageTitle}) {
                     </div> 
                 </div>
             )}
-            <h1 className="text-center">{pageTitle}</h1>
+            <h1 className="text-center md:text-[110px] text-[70px] px-2 pb-20 md:pb-24 leading-16">{pageTitle}</h1>
         </div>
     </div>
 }
