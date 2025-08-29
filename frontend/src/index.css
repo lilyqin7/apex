@@ -21,10 +21,11 @@
 }
 
 h1 {
-  font-family: var(--font-titles);
-  font-weight: 400;
+  font-family: var(--font-headers);
+  font-weight: 800;
   font-size: 110px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 h2 {
