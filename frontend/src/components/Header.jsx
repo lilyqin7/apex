@@ -4,14 +4,14 @@ import logo from '../assets/logo.png';
 import blackLogo from '../assets/logo-black.png';
 import searchIcon from '../assets/search-icon.png';
 
-function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
+function Header({topLayer, bottomLayer, pageTitle}) {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    return <div className="relative w-full" style={headerHeight ? { height: headerHeight } : {}}>
-        <img src={bottomLayer} alt="Bottom Layer" className="absolute top-0 left-0 w-full object-cover z-0 pointer-events-none" />
-        <img src={topLayer} alt="Top Layer" className="absolute top-0 left-0 w-full object-cover z-0 pointer-events-none" />
+    return <div className="relative w-full mb-36">
+        <img src={bottomLayer} alt="Bottom Layer" className="absolute top-0 left-0 w-full z-0 pointer-events-none h-[420px]" />
+        <img src={topLayer} alt="Top Layer" className="absolute top-0 left-0 w-full z-0 pointer-events-none h-[320px]" />
         <div className="relative z-10 flex flex-col gap-y-[40px]">
-            <div className="px-[40px] md:px-[64px] py-[9px] flex items-center justify-between text-white">
+            <div className="px-[40px] py-[9px] flex items-center justify-between text-white">
                 <Link to='/'>
                     <img src={logo} alt="Apex Logo" className="h-[75px] w-[75px]" />
                 </Link>
@@ -20,9 +20,7 @@ function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
-                    <span className="block w-8 h-1 bg-white mb-1 rounded"></span>
-                    <span className="block w-8 h-1 bg-white mb-1 rounded"></span>
-                    <span className="block w-8 h-1 bg-white rounded"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
                 </button>
                 <div className="hidden lg:flex flex-row space-x-[30px] text-[18px]">
                     <Link to='/meettheteam'>Meet the Team</Link>
@@ -35,11 +33,11 @@ function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
             {menuOpen && (
                 <div className="fixed top-0 left-0 w-full h-screen z-50 flex justify-center items-center lg:hidden">
                     <button 
-                        className="absolute top-6 right-6 text-4xl text-black"
+                        className="absolute top-7 right-10"
                         onClick={() => setMenuOpen(false)}
                         aria-label="Close menu"
                     >
-                        &times;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                     </button>
                     <div className="flex flex-col items-center justify-center gap-y-4 py-4 text-[18px] w-full h-full bg-[#F0E9DD]">
                         <Link to='/' onClick={() => setMenuOpen(false)}>

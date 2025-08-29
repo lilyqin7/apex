@@ -19,7 +19,6 @@ function BuggyPage() {
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Meet the Buggies"
-        headerHeight="547.36px"
       />
       <div className="sm:px-[50px] lg:px-[136px] text-center dark:text-white">
         <div className="px-[30px] pb-[80px] text-[22px]">

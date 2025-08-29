@@ -6,27 +6,12 @@ import bottomImg from '../assets/header-images/home-header-bottom-layer.png'
 import Circle from '../components/Circles.jsx'
 import photo from '../assets/home-image.png'
 
-function useResponsiveHeaderHeight() {
-  const [height, setHeight] = useState('300px');
-  useEffect(() => {
-    function handleResize() {
-      setHeight(window.innerWidth >= 768 ? '600px' : '300px');
-    }
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-  return height;
-}
-
 function HomePage() {
-  const headerHeight = useResponsiveHeaderHeight();
   return <div className="overflow-x-hidden">
       <Header
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Apex"
-        headerHeight={headerHeight}
       />
         <div className="flex flex-col items-center xl:relative xl:min-h-[600px] pb-[100px]">
           <div className="-mb-5 xl:-mb-15 xl:absolute xl:left-[146px] xl:-top-[100px]">
