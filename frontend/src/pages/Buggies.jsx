@@ -19,9 +19,8 @@ function BuggyPage() {
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Meet the Buggies"
-        headerHeight="547.36px"
       />
-      <div className="sm:px-[50px] lg:px-[136px] text-center text-white">
+      <div className="sm:px-[50px] lg:px-[136px] text-center dark:text-white">
         <div className="px-[30px] pb-[80px] text-[22px]">
             Apex's theme is fire (we like to call ourselves "the most fire buggy team"). Each of our buggies' names and paint jobs has been chosen to align with this theme.
         </div>

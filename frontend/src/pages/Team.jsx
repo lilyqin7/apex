@@ -23,9 +23,8 @@ function TeamPage() {
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Meet the Team"
-        headerHeight="553.6px"
       />
-      <div className="xl:px-[200px] px-[50px] text-center text-white pb-[80px]">
+      <div className="xl:px-[200px] px-[50px] text-center dark:text-white pb-[80px]">
         <img src={teamImg} alt="Apex Team" className="w-[900px] pb-[50px] mx-auto" />
         <div className="flex flex-col gap-y-[80px] justify-center items-center">
           <h2>Executive Members</h2>
