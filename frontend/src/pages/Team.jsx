@@ -11,7 +11,6 @@ import katrina from '../assets/exec-photos/katrina.png'
 import sam from '../assets/exec-photos/sam.png'
 import ray from '../assets/exec-photos/ray.png'
 import kayley from '../assets/exec-photos/kayley.png'
-import alex from '../assets/exec-photos/alex.png'
 import liam from '../assets/exec-photos/liam.png'
 import emma from '../assets/exec-photos/emma.png'
 import lily from '../assets/exec-photos/lily.png'
@@ -45,9 +44,8 @@ function TeamPage() {
             <ExecCards photo={ray} name="Ray Kong" position="Assistant Head Mechanic" />
             <ExecCards photo={kayley} name="Kayley Sze" position="Assistant Build Lead" />
           </div>
-          <h2>Push Captains</h2>
+          <h2>Push Captain</h2>
           <div className="flex flex-col gap-y-[80px] md:flex-row md:gap-x-[200px]">
-            <ExecCards photo={alex} name="Alex Werth" position="" />
             <ExecCards photo={liam} name="Liam Swayne" position="" />
           </div>
           <h2>Head Driver</h2>
