@@ -4,12 +4,18 @@ import logo from '../assets/logo.png';
 import blackLogo from '../assets/logo-black.png';
 import searchIcon from '../assets/search-icon.png';
 
-function Header({topLayer, bottomLayer, pageTitle, headerHeight}) {
+function Header({topLayer, bottomLayer, pageTitle}) {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [headerHeight, setHeaderHeight] = useState(null);
 
-    return <div className="relative w-full overflow-hidden" style={headerHeight ? { height: headerHeight } : {}}>
-        <img src={bottomLayer} alt="Bottom Layer" className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none" />
-        <img src={topLayer} alt="Top Layer" className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none" />
+    const handleImageLoad = (e) => {
+        const height = e.target.naturalHeight;
+        setHeaderHeight(`${height + height * 0.2}px`);
+    };
+
+    return <div className="relative w-full" style={headerHeight ? { height: headerHeight } : {}}>
+        <img src={bottomLayer} alt="Bottom Layer" className="absolute top-0 left-0 w-full object-cover z-0 pointer-events-none" />
+        <img src={topLayer} alt="Top Layer" className="absolute top-0 left-0 w-full object-cover z-0 pointer-events-none" onLoad={handleImageLoad} />
         <div className="relative z-10 flex flex-col gap-y-[40px]">
             <div className="px-[40px] md:px-[64px] py-[9px] flex items-center justify-between text-white">
                 <Link to='/'>

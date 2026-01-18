@@ -9,7 +9,6 @@ function EventsPage() {
         topLayer={topImg}
         bottomLayer={bottomImg}
         pageTitle="Upcoming Events"
-        headerHeight="550px"
       />
       <div className="flex justify-center">
         <div className="w-[80vw] lg:w-[800px] aspect-video">
